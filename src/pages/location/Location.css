@@ -1,0 +1,45 @@
+.location-section__container {
+  width: 100%;
+  padding: 9.6rem 0rem;
+}
+.location-section__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 6rem;
+}
+.location-section__title {
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  font-weight: 600;
+  letter-spacing: -2%;
+  color: #101828;
+  margin-bottom: 2rem;
+}
+.location-section__subtitle {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: #475467;
+}
+.location {
+  display: flex;
+}
+.city {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  color: #101828;
+  margin-bottom: 0.8rem;
+}
+.address {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #475467;
+}
+.location-icon {
+  margin-right: 1.6rem;
+  padding: 1.2rem;
+  color: black;
+  background-color: #7f56d9;
+}
