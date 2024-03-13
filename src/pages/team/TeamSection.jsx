@@ -30,7 +30,7 @@ function TeamSection() {
                   <h2 className="member-list__name">Abdurauf Halimboyev</h2>
                   <p className="member-list__occupation">
                     {/* <span>Founder & CEO</span> */}
-                    <span className="job">Flutter instructor</span>
+                    <span className="job">Flutter | Foundation instructor</span>
                   </p>
                 </div>
                 {/* <div className="member-list__links">
@@ -114,6 +114,17 @@ function TeamSection() {
                     <img src={TelegramIcon} alt="telegram icon" />
                   </a>
                 </div> */}
+              </div>
+            </li>
+            <li className="member-list__item">
+              <div className="member-list__info">
+                <div>
+                  <h2 className="member-list__name">Dostonbek Hasanov</h2>
+                  <p className="member-list__occupation">
+                    {/* <span>Instructor</span> */}
+                    <span className="job">SAT instructor</span>
+                  </p>
+                </div>
               </div>
             </li>
           </ul>

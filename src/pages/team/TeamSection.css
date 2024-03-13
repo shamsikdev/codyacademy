@@ -42,6 +42,7 @@
 .member-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   row-gap: 3.2rem;
   column-gap: 6.4rem;
 }
@@ -76,7 +77,16 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-
+.member-list__item:nth-child(5) {
+  background-image: url(../../assets/sat-i.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.member-list__item:nth-child(5) > .member-list__info {
+  position: absolute;
+  bottom: 25%;
+}
 .member-list__info {
   display: flex;
   justify-content: space-between;
