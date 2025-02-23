@@ -6,15 +6,33 @@ import "./Header.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
 function Header() {
   const [isOpened, setIsOpened] = useState(false);
   function handleClick() {
     setIsOpened((open) => !open);
   }
-  // function clickScroll() {
-  //   window.scrollTo(0, 0);
-  // }
+  const handleScrollHome = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  const handleScrollTeachers = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 380,
+      behavior: "smooth",
+    });
+  };
+  const handleScrollPricing = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 1550,
+      behavior: "smooth",
+    });
+  };
   return (
     <header className="header">
       <div className="container header__container">
@@ -25,25 +43,27 @@ function Header() {
           </a>
           <nav className="sitenav">
             <ul className="sitenav__list">
-              <li className="sitenav__item">
-                <a href="" className="sitenav__link">
-                  Home
-                </a>
-              </li>
-              <li className="sitenav__item">
+              <li onClick={handleScrollHome} className="sitenav__item">
                 <a href="/" className="sitenav__link">
-                  Teachers
+                  Bosh sahifa
                 </a>
               </li>
-              <li className="sitenav__item">
+              <li onClick={handleScrollTeachers} className="sitenav__item">
+                <a href="/" className="sitenav__link">
+                  Ustozlar
+                </a>
+              </li>
+              <li onClick={handleScrollPricing} className="sitenav__item">
                 <a href="" className="sitenav__link">
-                  Pricing
+                  Kurs turlari
                 </a>
               </li>
             </ul>
           </nav>
         </div>
-        <button className="btn header__btn">Get the app</button>
+        <button className="btn header__btn">
+          Ilovani yuklab olish <div className="btn__overlay">Soon</div>
+        </button>
         <button className="hamburger-btn" onClick={handleClick}>
           {!isOpened && <RxHamburgerMenu className="hamburger" />}
           {isOpened && <RxCross1 className="cross" />}

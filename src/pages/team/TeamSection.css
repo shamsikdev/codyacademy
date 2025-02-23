@@ -42,7 +42,6 @@
 .member-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   row-gap: 3.2rem;
   column-gap: 6.4rem;
 }
@@ -61,36 +60,27 @@
   background-repeat: no-repeat;
 }
 .member-list__item:nth-child(2) {
-  background-image: url(../../assets/net-i.JPG);
+  background-image: url(../../assets/net-i.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 50%;
 }
 .member-list__item:nth-child(3) {
-  background-image: url(../../assets/ielts-i.JPG);
+  background-image: url(../../assets/ielts-i.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .member-list__item:nth-child(4) {
-  background-image: url(../../assets/foundation-i.jpg);
+  background-image: url(../../assets/sat-i.png);
   background-repeat: no-repeat;
-  background-size: contain;
-}
-.member-list__item:nth-child(5) {
-  background-image: url(../../assets/sat-i.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-}
-.member-list__item:nth-child(5) > .member-list__info {
-  position: absolute;
-  bottom: 25%;
+  background-size: cover;
+  background-position: center;
 }
 .member-list__info {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   padding: 2rem;
   width: 100%;
   max-width: 31.5rem;
@@ -175,5 +165,10 @@
   .team-section__container {
     padding: 4.8rem 0rem;
     margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 365px) {
+  .member-list__item {
+    width: 32.4rem;
   }
 }

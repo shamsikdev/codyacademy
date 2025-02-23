@@ -9,6 +9,13 @@ import LinkedinIcon from "../../assets/linkedin-gr-icon.svg";
 import FacebookIcon from "../../assets/facebook-icon.svg";
 import GithubIcon from "../../assets/github-gr-icon.svg";
 function Footer() {
+  const handleScrollTeachers = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 380,
+      behavior: "smooth",
+    });
+  };
   return (
     <footer className="footer">
       <div className="container footer__container">
@@ -36,16 +43,20 @@ function Footer() {
               <h3 className="footer__logo-text logo-text">Cody</h3>
             </a>
             <p className="wrapper-left__text">
-              Learn amazing digital skills that create more happy in the world.
+              Dunyoda yanada baxtliroq bo'ladigan ajoyib raqamli ko'nikmalarni
+              o'rganing.
             </p>
-            <nav>
+            {/* <nav>
               <ul className="wrapper-left__list">
                 <li className="wrapper-left__item">
                   <a href="" className="wrapper-left__link">
                     Overview
                   </a>
                 </li>
-                <li className="wrapper-left__item">
+                <li
+                  onClick={handleScrollTeachers}
+                  className="wrapper-left__item"
+                >
                   <a href="" className="wrapper-left__link">
                     Teachers
                   </a>
@@ -66,11 +77,11 @@ function Footer() {
                   </a>
                 </li>
               </ul>
-            </nav>
+            </nav> */}
           </div>
           <div className="wrapper-right">
             <a href="/" target="blank" className="wrapper-right__text">
-              Get the app
+              Ilovani yuklab olish
             </a>
             <div>
               <a target="blank" href="https://www.apple.com/app-store/">
@@ -87,16 +98,16 @@ function Footer() {
           <p className="copyright-text">© 2024 Cody. All rights reserved.</p>
           <ul className="contact-list">
             <li className="contact-item">
-              <a href="http://" target="blank">
+              <a href="https://www.instagram.com/cody_academy/" target="blank">
                 <img src={InstagramIcon} alt="instagram icon" />
               </a>
             </li>
             <li className="contact-item">
-              <a href="http://" target="blank">
+              <a href="https://t.me/cody_academy" target="blank">
                 <img src={TelegramIcon} alt="telegram icon" />
               </a>
             </li>
-            <li className="contact-item">
+            {/* <li className="contact-item">
               <a href="http://" target="blank">
                 <img src={LinkedinIcon} alt="linkedin icon" />
               </a>
@@ -110,7 +121,7 @@ function Footer() {
               <a href="http://" target="blank">
                 <img src={GithubIcon} alt="github icon" />
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

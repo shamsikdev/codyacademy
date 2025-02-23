@@ -9,11 +9,11 @@ function TeamSection() {
     <section className="team-section">
       <div className="container team-section__container">
         <div className="left-side">
-          <span className="left-side__intro intro">Our team</span>
-          <h1 className="left-side__title">Teachers team</h1>
+          <span className="left-side__intro intro">Bizning jamoa</span>
+          <h1 className="left-side__title">O’qituvchilar jamoasi</h1>
           <p className="left-side__text">
-            We’re a cross-disciplinary team that loves to create great
-            experiences for our students.
+            Biz o’quvchilarimiz uchun sifatli ta’lim berishni maqsad qilgan
+            mutahasislar jamoasimiz.
           </p>
           {/* <div className="left-side__btns">
             <button className="btn grey-btn left-side__btn">About us</button>
@@ -97,31 +97,8 @@ function TeamSection() {
             <li className="member-list__item">
               <div className="member-list__info">
                 <div>
-                  <h2 className="member-list__name">Sardor Ergashaliyev</h2>
-                  <p className="member-list__occupation">
-                    {/* <span>Instructor</span> */}
-                    <span className="job">Foundation instructor</span>
-                  </p>
-                </div>
-                {/* <div className="member-list__links">
-                  <a href="" className="member-list__link">
-                    <img src={LinkedinIcon} alt="linkedin icon" />
-                  </a>
-                  <a href="" className="member-list__link">
-                    <img src={GithubIcon} alt="github icon" />
-                  </a>
-                  <a href="" className="member-list__link">
-                    <img src={TelegramIcon} alt="telegram icon" />
-                  </a>
-                </div> */}
-              </div>
-            </li>
-            <li className="member-list__item">
-              <div className="member-list__info">
-                <div>
                   <h2 className="member-list__name">Dostonbek Hasanov</h2>
                   <p className="member-list__occupation">
-                    {/* <span>Instructor</span> */}
                     <span className="job">SAT instructor</span>
                   </p>
                 </div>

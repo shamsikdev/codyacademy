@@ -38,8 +38,36 @@
   color: #475467;
 }
 .location-icon {
-  margin-right: 1.6rem;
+  border-radius: 1rem;
   padding: 1.2rem;
-  color: black;
   background-color: #7f56d9;
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.6rem;
+}
+.location-icon__svg {
+  font-size: 4rem;
+}
+@media screen and (max-width: 660px) {
+  .location-section__content {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 483px) {
+  .location-section__container {
+    padding: 6rem 0rem;
+  }
+  .location-section__title {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .city {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 0.4rem;
+  }
 }

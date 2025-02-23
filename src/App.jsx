@@ -9,6 +9,7 @@ import Location from "./pages/location/Location";
 import TeamSection from "./pages/team/TeamSection";
 import PricingSection from "./pages/pricing/PricingSection";
 function App() {
+  document.addEventListener("scroll", () => console.log(window.scrollY));
   return (
     <>
       <Header />

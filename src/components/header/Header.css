@@ -45,6 +45,7 @@
 .header__btn {
   padding: 1rem 1.8rem;
   cursor: pointer;
+  position: relative;
 }
 .header__btn:hover {
   background-color: #0c111d;
@@ -59,4 +60,19 @@
   border: 0;
   background-color: #0c111d;
   display: none;
+}
+.btn__overlay {
+  position: absolute;
+  backdrop-filter: blur(10px);
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
 }
